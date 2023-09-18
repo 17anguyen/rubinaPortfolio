@@ -32,34 +32,34 @@ export const heroImages = [
 ];
 
 
-// const experiences = [
-//     {
-//         title: "Web Designer",
-//         company_name: "Freelance",
-//         icon: backend,
-//         iconBg: "#383E56",
-//         date: "January 2020 - Present",
-//         points: [
-//             "Developing and maintaining web applications clients needs.",
-//             "Collaborating with clients to create high-quality products.",
-//             "Implementing responsive design and ensuring cross-browser compatibility.",
-//             "Participating in design reviews implimenting regular updates.",
-//         ],
-//     },
-//     {
-//         title: "Full-Stack Web Developer Certificaiton",
-//         company_name: "University of Washington",
-//         icon: meta,
-//         iconBg: "#E6DEDD",
-//         date: "June 2023",
-//         points: [
-//             "Develop a responsive,  user-friendly, intuitive, and secure full-stack website from with interactive features to cross-browser optimize traffic and user experience  using React, Node.js, and Express.",
-//             "Collaborate on a self-managed team of 4 developers to create high-quality products.",
-//             "Implemented automated testing using Jest frameworks for a REST website application",
-//             "Developed and deployed a fully-functioning web application using React, Node.js, and MySQL in 10 days.",
-//         ],
-//     },
-// ];
+const experiences = [
+    {
+        title: "Visitor Experience Representative",
+        company_name: "Henry Art Gallery",
+        date: "Nov 2021-Present",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Eo_circle_pink_white_letter-h.svg/1024px-Eo_circle_pink_white_letter-h.svg.png",
+        iconBg: "#fff",
+        points: [
+            "add info",
+            "add info",
+            "add info",
+            "add info",
+        ],
+    },
+    {
+        title: "Studio Assistant Intern",
+        company_name: "Martyr Sauce",
+        date: "Jan 2022-Present",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Eo_circle_pink_letter-m.svg/2048px-Eo_circle_pink_letter-m.svg.png",
+        iconBg: "#fff",
+        points: [
+            "add info",
+            "add info",
+            "add info",
+            "add info",
+        ],
+    },
+];
 
 
 // const projects = [
@@ -189,4 +189,4 @@ export const heroImages = [
 //     },
 // ];
 
-// export { experiences, projects };
+export { experiences, };

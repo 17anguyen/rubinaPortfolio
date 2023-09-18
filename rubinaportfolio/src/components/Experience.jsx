@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
 
 import { styles } from '../styles';
-// import { experiences } from "../constants";
+import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
@@ -12,9 +12,9 @@ const ExperienceCard = ({ experience }) =>
 (
 
   < VerticalTimelineElement
-    contentStyle={{ background: '#2E3252', color: '#fff' }}
+    contentStyle={{ background: '#004AAD', color: '#fff' }}
     contentArrowStyle={{
-      borderRight: '7px solid #232631'
+      borderRight: '7px solid #004AAD'
     }}
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
@@ -23,7 +23,7 @@ const ExperienceCard = ({ experience }) =>
         <img
           src={experience.icon}
           alt={experience.company_name}
-          className='w-[60%] h-[60%] object-contain'
+          className='w-[100%] h-[100%] object-contain'
         />
       </div>}
   >
@@ -53,11 +53,9 @@ const ExperienceCard = ({ experience }) =>
 const Experience = () => {
   return (
     <>
-      <p>experience</p>
-      {/* <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
-      </motion.div>
+      <motion.div variants={textVariant()}>
+        <h2 className={`${styles.sectionHeadText} text-[#004AAD]`}>Work Experience.</h2>
+      </motion.div >
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
@@ -66,7 +64,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
 
-      </div> */}
+      </div>
     </>
   )
 }
