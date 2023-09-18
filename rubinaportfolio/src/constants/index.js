@@ -19,15 +19,15 @@ export const navLinks = [
 export const heroImages = [
     {
         url: 'https://placehold.co/600x400/EEE/31343C',
-        caption: 'Slide 1'
+        title: 'Slide 1'
     },
     {
         url: 'https://placehold.co/600x400/EEE/31343C',
-        caption: 'Slide 2'
+        title: 'Slide 2'
     },
     {
         url: 'https://placehold.co/600x400/EEE/31343C',
-        caption: 'Slide 3'
+        title: 'Slide 3'
     },
 ];
 
