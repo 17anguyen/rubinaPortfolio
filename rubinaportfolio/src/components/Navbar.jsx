@@ -40,7 +40,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className='text-white h-9 text-[18px] font-bold cursor-pointer flex '>
+          <p className='text-white h-9 text-[25px] font-bold cursor-pointer flex '>
             Rubina &nbsp;
             <span className='sm:block hidden'>Postma</span>
           </p>
@@ -50,7 +50,7 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.title ? "text-white" : "text-[#69005A]"
+              className={`${active === nav.title ? "text-white" : "text-[#8D8484]"
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >

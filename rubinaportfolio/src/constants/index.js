@@ -7,14 +7,30 @@ export const navLinks = [
         title: "About",
     },
     {
-        id: "work",
-        title: "Work",
-    },
-    {
         id: "contact",
         title: "Contact",
     },
+    {
+        id: "work",
+        title: "Work",
+    },
 ];
+
+export const heroImages = [
+    {
+        url: 'https://placehold.co/600x400/EEE/31343C',
+        caption: 'Slide 1'
+    },
+    {
+        url: 'https://placehold.co/600x400/EEE/31343C',
+        caption: 'Slide 2'
+    },
+    {
+        url: 'https://placehold.co/600x400/EEE/31343C',
+        caption: 'Slide 3'
+    },
+];
+
 
 // const experiences = [
 //     {
