@@ -5,6 +5,7 @@ import Experience from './Experience';
 import Works from './Works';
 import Contact from './Contact';
 import EmblaCarousel from './EmblaCarousel';
+import ImageCarousel from './CarouselApp';
 
 export {
   Hero,
@@ -14,4 +15,5 @@ export {
   Works,
   Contact,
   EmblaCarousel,
+  ImageCarousel,
 }

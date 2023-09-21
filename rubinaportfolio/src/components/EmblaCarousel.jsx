@@ -1,25 +1,30 @@
-import { React, useCallback } from 'react';
+import { React, useCallback, useState, useEffect } from 'react';
 
 import useEmblaCarousel from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay'
-import { heroImages } from "../constants";
+import Autoplay from 'embla-carousel-autoplay';
 
 
-const EmblaCarousel = () => {
+const EmblaCarousel = (props) => {
+    const { slides, options } = props
+
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()],)
+
+    // autoplay speed 
     const autoplayOptions = {
         delay: 500,
         rootNode: (emblaRoot) => emblaRoot.parentElement,
     }
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
+    // prev
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev()
     }, [emblaApi])
-
+    // next
     const scrollNext = useCallback(() => {
         if (emblaApi) emblaApi.scrollNext()
     }, [emblaApi])
+
     return (
-        <div className="embla row inline-block">
+        <div className="embla">
             <button className="embla__next" onClick={scrollNext}>
                 Next
             </button>
@@ -27,18 +32,21 @@ const EmblaCarousel = () => {
                 <div className="embla__container">
                     <div className="embla__slide">
                         <img
+                            className='embla__slide__img'
                             src='https://placekitten.com/200/140'
                             alt="slide 1"
                         />
                     </div>
                     <div className="embla__slide">
                         <img
+                            className='embla__slide__img'
                             src='https://placekitten.com/200/138'
                             alt="slide 1"
                         />
                     </div>
                     <div className="embla__slide">
                         <img
+                            className='embla__slide__img'
                             src='https://placehold.co/600x400/EEE/31343C'
                             alt="slide 1"
                         />

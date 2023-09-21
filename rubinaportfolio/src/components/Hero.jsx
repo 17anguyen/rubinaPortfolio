@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
 import { heroImages } from "../constants";
 import { styles } from "../styles";
-import { EmblaCarousel } from "./index";
+import { ImageCarousel, EmblaCarousel } from "./index";
 
-import { Slideshow } from "./index"
 
 const Hero = () => {
 
@@ -16,9 +15,10 @@ const Hero = () => {
           </h1>
         </div>
         {/* slideshow */}
-        <div className='flex flex-columns-3xs justify-center items-center mt-5'>
+        <div className=''>
           {/* <Slideshow /> */}
-          <EmblaCarousel />
+          {/* <EmblaCarousel /> */}
+          <ImageCarousel />
         </div>
       </div>
 
