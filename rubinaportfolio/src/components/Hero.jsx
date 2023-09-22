@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { heroImages } from "../constants";
 import { styles } from "../styles";
-import { ImageCarousel, EmblaCarousel } from "./index";
+import { ImageCarousel } from "./index";
 
 
 const Hero = () => {
@@ -16,8 +16,6 @@ const Hero = () => {
         </div>
         {/* slideshow */}
         <div className=''>
-          {/* <Slideshow /> */}
-          {/* <EmblaCarousel /> */}
           <ImageCarousel />
         </div>
       </div>

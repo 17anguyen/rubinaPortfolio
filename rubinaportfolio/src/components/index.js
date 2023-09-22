@@ -4,7 +4,6 @@ import About from './About';
 import Experience from './Experience';
 import Works from './Works';
 import Contact from './Contact';
-import EmblaCarousel from './EmblaCarousel';
 import ImageCarousel from './CarouselApp';
 
 export {
@@ -14,6 +13,5 @@ export {
   Experience,
   Works,
   Contact,
-  EmblaCarousel,
   ImageCarousel,
 }

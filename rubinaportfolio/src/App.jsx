@@ -9,6 +9,9 @@ import { About, Contact, Experience, Hero, Navbar, Works } from './components';
 const App = () => {
   return (
     <BrowserRouter>
+      <Routes>
+        <Route path="/Paintings" />
+      </Routes>
       <div className='relative z-0 bg-[#FF66C4]'>
         <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;'>
           <Navbar />
