@@ -19,9 +19,6 @@ export default function ImageCarousel() {
                         <img src={s} />
                     )
                     )}
-                    {titles.map((i) => (
-                        <h1>{i}</h1>
-                    ))}
                 </Carousel>
             </div>
         </div>
