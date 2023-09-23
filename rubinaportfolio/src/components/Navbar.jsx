@@ -122,12 +122,18 @@ const Navbar = () => {
           <div
             className={`${!toggle ? "hidden" : "flex"
               } p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            style={{
+              backgroundColor: "#8d7e7e26",
+              borderRadius: "16px",
+              boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+              backdropFilter: "blur(13px)"
+            }}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`text-[16px] font-medium cursor-pointer display: block ${active === nav.title ? "text-white" : "text-[#8D8484]"
+                  className={`text-[18px] font-bold cursor-pointer display: block ${active === nav.title ? "text-[#FF66C4]" : "text-white"
                     }`}
                   onClick={() => {
                     setToggle(!toggle);
@@ -137,42 +143,42 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
-              <li className={`text-[#8D8484] text-[18px] font-medium cursor-pointer display: block`}
+              <li className={`text-white text-[18px] font-bold cursor-pointer display: block`}
               >
                 Works
                 <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
                   <li
-                    className="cursor-pointer text-[16px] text-[#8D8484]">
+                    className="cursor-pointer text-[16px] text-[#FF66C4]">
                     <Link to="/Paintings">
                       Paintings
                     </Link>
                   </li>
                   <li
-                    className="cursor-pointer text-[16px] text-[#8D8484]">
+                    className="cursor-pointer text-[16px] text-[#FF66C4]">
                     <Link to="/Prints">
                       Prints
                     </Link>
                   </li>
                   <li
-                    className="cursor-pointer text-[16px] text-[#8D8484]">
+                    className="cursor-pointer text-[16px] text-[#FF66C4]">
                     <Link to="/Mixed_Media_Sculptures">
                       Mixed Media + Sculptures
                     </Link>
                   </li>
                   <li
-                    className="cursor-pointer text-[16px] text-[#8D8484]">
+                    className="cursor-pointer text-[16px] text-[#FF66C4]">
                     <Link to="/Digital">
                       Digital
                     </Link>
                   </li>
                   <li
-                    className="cursor-pointer text-[16px] text-[#8D8484]">
+                    className="cursor-pointer text-[16px] text-[#FF66C4]">
                     <Link to="/Video">
                       Video
                     </Link>
                   </li>
                   <li
-                    className="cursor-pointer text-[16px] text-[#8D8484]">
+                    className="cursor-pointer text-[16px] text-[#FF66C4]">
                     <Link to="/Archive">
                       Archive
                     </Link>
