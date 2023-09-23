@@ -123,10 +123,10 @@ const Navbar = () => {
             className={`${!toggle ? "hidden" : "flex"
               } p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
             style={{
-              backgroundColor: "#8d7e7e26",
+              backgroundColor: " rgba(67, 67, 67, 0.88)",
               borderRadius: "16px",
               boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-              backdropFilter: "blur(13px)"
+              backdropFilter: "blur(10.7px)"
             }}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>

@@ -108,9 +108,10 @@ aesthetic .embla__viewport {
 
 .smolmenu {
   /* From https://css.glass */
-  background: #8d7e7e26;
+  background: rgba(67, 67, 67, 0.88);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(13px);
-  -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(10.7px);
+  -webkit-backdrop-filter: blur(10.7px);
+  border: 1px solid rgba(67, 67, 67, 0.3);
 }
