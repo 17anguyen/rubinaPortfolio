@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
+import { ChevronDown } from "react-feather";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [hover, setHover] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -57,6 +59,56 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li className={`text-[#8D8484] hover:text-white text-[18px] font-medium cursor-pointer display: block`}
+            onClick={() => setToggle(!toggle)}
+          >
+            <p className="inline">
+              Works
+            </p>
+            <ChevronDown className="inline" />
+            <div className={`${!toggle ? "hidden" : "flex"
+              } p-3 bg-[#69666617] absolute top-20 mx-auto min-w-[140px] z-10 rounded-xl`}>
+              <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
+                <li
+                  className="cursor-pointer text-[16px] hover:text-white text-[#8D8484]">
+                  <Link to="/Paintings">
+                    Paintings
+                  </Link>
+                </li>
+                <li
+                  className="cursor-pointer text-[16px] hover:text-white text-[#8D8484]">
+                  <Link to="/Prints">
+                    Prints
+                  </Link>
+                </li>
+                <li
+                  className="cursor-pointer text-[16px] hover:text-white text-[#8D8484]">
+                  <Link to="/Mixed_Media_Sculptures">
+                    Mixed Media + Sculptures
+                  </Link>
+                </li>
+                <li
+                  className="cursor-pointer text-[16px] hover:text-white text-[#8D8484]">
+                  <Link to="/Digital">
+                    Digital
+                  </Link>
+                </li>
+                <li
+                  className="cursor-pointer text-[16px] hover:text-white text-[#8D8484]">
+                  <Link to="/Video">
+                    Video
+                  </Link>
+                </li>
+                <li
+                  className="cursor-pointer text-[16px] hover:text-white text-[#8D8484]">
+                  <Link to="/Archive">
+                    Archive
+                  </Link>
+                </li>
+              </ul>
+
+            </div>
+          </li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -89,7 +141,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </nav >
   );
 };
 

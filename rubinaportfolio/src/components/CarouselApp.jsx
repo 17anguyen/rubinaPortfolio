@@ -5,6 +5,11 @@ const slides = [
     'https://placehold.co/600x400/EEE/31343C',
     'https://placehold.co/600x400/EEE/31343C'
 ];
+const titles = [
+    'Paintings',
+    'Prints',
+    'Mixed Media + Sculptures'
+];
 export default function ImageCarousel() {
     return (
         <div className="relative">
@@ -14,6 +19,9 @@ export default function ImageCarousel() {
                         <img src={s} />
                     )
                     )}
+                    {titles.map((i) => (
+                        <h1>{i}</h1>
+                    ))}
                 </Carousel>
             </div>
         </div>

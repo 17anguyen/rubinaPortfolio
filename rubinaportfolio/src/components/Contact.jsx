@@ -8,7 +8,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+const Contact = () => {
   const [agreed, setAgreed] = useState(false)
   const fromRef = useRef();
   const [form, setForm] = useState({
@@ -239,3 +239,4 @@ export default function Example() {
     </div>
   )
 }
+export default SectionWrapper(Contact, 'contact')
